@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.buy-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: blue;
+    text-decoration: none;
+}
+
+.fund {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .item {
+        width: 100%;
+    }
+}
