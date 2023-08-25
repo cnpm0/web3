@@ -13,7 +13,7 @@ body {
 }
 
 .item {
-    width: 300px;
+    width: calc(25% - 20px); /* Pour afficher 4 objets par ligne avec espace entre eux */
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -38,16 +38,17 @@ body {
     font-weight: bold;
 }
 
-.buy-link {
+.buy-link, .fund-link {
     display: inline-block;
     margin-top: 5px;
     color: blue;
     text-decoration: none;
 }
 
-.fund {
-    text-align: center;
-    margin-top: 20px;
+@media screen and (max-width: 800px) {
+    .item {
+        width: calc(33.33% - 20px); /* Pour afficher 3 objets par ligne avec espace entre eux */
+    }
 }
 
 @media screen and (max-width: 600px) {
