@@ -186,12 +186,6 @@ Coach en résilience">
     </div>
     <div class="vcard-separator" ng-show="view.bio || view.numbers_mobile || view.numbers_phone || view.email || view.street || view.zip || view.city || view.country || view.company "></div>
     <div id="socialmedialinksContainer">
-        <div class="vcard-social" style="margin-bottom:20px;">
-            <!--        <h5>--><!--</h5>-->
-            <!--        <a href="{{value|prefixURL}}" ng-repeat="(key, value) in view.socialmedialinks"><span-->
-            <!--                    class="icon icon-wrapper {{key}}" target="_top"><i class="icon icon icon-{{key}}"></i></span></a>-->
-            <div class="socialMedia-container" ng-show="view.code.channels.length &gt; 0">
-                <label>Médias sociaux</label>
                 <i class="icon-social-media"></i>
                 <div class="channels-padding mt-0">
                     <!-- ngRepeat: channel in view.code.channels track by $index --><a href="https://www.linkedin.com/in/nicole-gallien/" target="_blank" class="channel-container ng-scope" id="channel-item-LinkedIn" ng-click="loadDemo ? callAction($event,'channelAction') : ''" ng-repeat="channel in view.code.channels track by $index">
