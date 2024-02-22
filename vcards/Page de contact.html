@@ -217,14 +217,9 @@ Coach en résilience">
                     Enregistrez les données du contact                </div>
                 <div class="fab-header text-regular">Comment souhaitez-vous enregistrer les coordonnées&nbsp;?</div>
                 <ul>
-                    <li data-test="send-by-email-button" open-popup="email" class="addContactAction" ng-click="!loadDemo ? toggleFabStep(1,2) : callAction($event, 'addContactAction')">
-                        <i class="iconFab icon-fab-share-email"></i>
-                        <a href="">
-                            Envoyer par e-mail                        </a>
-                    </li>
                     <li data-test="send-to-my-phone-button" ng-click="loadDemo ? callAction($event, 'addContactAction') : ''" class="addContactAction">
                         <i class="iconFab icon-fab-share-savecontact"></i>
-                        <!-- ngIf: !loadDemo --><a ng-if="!loadDemo" href="https://qrco.de/handlePost/bepAhh/?download=true" rel="external" class="ng-scope">
+                        <!-- ngIf: !loadDemo --><a ng-if="!loadDemo" href="vcard_nicole_gallien.vcf" rel="external" class="ng-scope">
                             Enregistrer sur mon téléphone                        </a><!-- end ngIf: !loadDemo -->
                         <!-- ngIf: loadDemo -->
                     </li>
